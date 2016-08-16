@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Flexbox Fixed Header</title>
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 0;
+}
+/*html,
+body {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+}*/
+.height-100-viewport {
+    height: 100vh;
+}
+.width-100-viewport {
+    width: 100vw;
+}
+.flex-grid {
+    display: flex;
+}
+.flex-grid > * {
+    flex: 1;
+}
+.flex-grid-direction-column {
+    flex-direction: column;
+}
+.flex-grid-justify-center {
+    justify-content: center;
+}
+.header {
+    background-color: rgba(255,0,0,.5);
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.content p {
+    background-color: #0c0;
+    height: 300px;
+    margin-bottom: 3px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <p>header content</p>
+    </div>
+    <div class="content">
+        <p>content</p>
+        <p>content</p>
+        <p>content</p>
+        <p>content</p>
+        <p>content</p>
+        <p>content</p>
+    </div>
+</div>
+</body>
+</html>

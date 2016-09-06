@@ -1,1 +1,1 @@
-var newObj = JSON.parse(JSON.stringify(objToClone));
+var newObj = JSON.parse(JSON.stringify(objToCopy));

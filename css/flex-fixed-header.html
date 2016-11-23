@@ -33,26 +33,23 @@ body {
 .flex-grid-direction-column {
     flex-direction: column;
 }
+.flex-grid-direction-row {
+    flex-direction: row;
+}
 .flex-grid-justify-center {
     justify-content: center;
 }
 .header {
-    background-color: rgba(255,0,0,.5);
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
+    background-color: #f00;
 }
-.content p {
-    background-color: #0c0;
-    height: 300px;
-    margin-bottom: 3px;
+.content {
+    background-color: #0f0;
+    flex: 7;
 }
 </style>
 </head>
 <body>
-<div class="container">
+<div class="container flex-grid flex-grid-direction-column height-100-viewport">
     <div class="header">
         <p>header content</p>
     </div>

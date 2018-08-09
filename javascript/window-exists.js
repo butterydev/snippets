@@ -8,4 +8,6 @@ const windowExists = (callback) => {
       return true
     }
   }
+
+  return false
 }

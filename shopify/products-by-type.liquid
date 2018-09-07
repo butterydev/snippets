@@ -1,0 +1,10 @@
+{% comment %}
+// -- Products by type --//
+{% endcomment %}
+{%- for product in collections.all.products -%}
+  {%- if product.type == 'TYPE_NAME_HERE' -%}
+
+    <div>type item</div>
+
+  {%- endif -%}
+{%- endfor -%}
